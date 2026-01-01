@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vibe Technologies - Ad Suite Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        h2 {
+            color: #888;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Ad Common Styles */
+        .ad-banner {
+            position: relative;
+            background: #050507;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .ad-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top right, rgba(41, 151, 255, 0.2), transparent 70%),
+                radial-gradient(circle at bottom left, rgba(182, 102, 255, 0.1), transparent 70%);
+            z-index: 1;
+        }
+
+        .ad-noise {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48ZmlsdGVyIGlkPSJnoiPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjY1IiBudW1PY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+');
+            z-index: 2;
+        }
+
+        .ad-content {
+            position: relative;
+            z-index: 10;
+            padding: 40px;
+        }
+
+        .logo-mark {
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .headline {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subhead {
+            color: #888;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background: #fff;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Formats */
+        .instagram-story {
+            width: 414px;
+            /* Scaled down 9:16 */
+            height: 736px;
+        }
+
+        .instagram-square {
+            width: 600px;
+            height: 600px;
+        }
+
+        .twitter-post {
+            width: 800px;
+            height: 450px;
+            /* 16:9ish */
+        }
+
+        /* Specific Ad Designs */
+        .design-omni .headline {
+            background: linear-gradient(90deg, #fff, #2997ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .design-flow .ad-bg {
+            background: radial-gradient(circle at center, rgba(182, 102, 255, 0.2), transparent 70%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Brand Asset Generator</h1>
+    <p>Screenshot these elements to use as official marketing materials.</p>
+
+    <h2>Instagram Story (9:16) - Product Launch</h2>
+    <div class="ad-banner instagram-story design-omni">
+        <div class="ad-bg"></div>
+        <div class="ad-noise"></div>
+        <div class="ad-content">
+            <div class="logo-mark">Vibe Tech</div>
+            <div class="headline">Omni<br>Has<br>Arrived.</div>
+            <p class="subhead">The reasoning engine that changes everything.</p>
+            <a href="#" class="cta-btn">Swipe Up</a>
+        </div>
+    </div>
+
+    <h2>Instagram/LinkedIn Square (1:1) - Recruitment / Brand</h2>
+    <div class="ad-banner instagram-square design-flow">
+        <div class="ad-bg"></div>
+        <div class="ad-noise"></div>
+        <div class="ad-content">
+            <div class="logo-mark">We are hiring</div>
+            <div class="headline">Join the<br>Revolution.</div>
+            <p class="subhead">Vibe Technologies is looking for visionaries.</p>
+            <a href="#" class="cta-btn">Apply Now</a>
+        </div>
+    </div>
+
+    <h2>Twitter/LinkedIn Header (16:9) - Pricing Announcement</h2>
+    <div class="ad-banner twitter-post">
+        <div class="ad-bg"></div>
+        <div class="ad-noise"></div>
+        <div class="ad-content">
+            <div class="logo-mark">Limited Access</div>
+            <div class="headline">Innovator Tier: $49/mo</div>
+            <p class="subhead">Get early access to Vibe Nexus hardware and Pro models.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

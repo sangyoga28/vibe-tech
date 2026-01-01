@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vibe AI - Experience the next evolution of artificial intelligence. Designed for creators, engineered for perfection.">
+    <meta property="og:title" content="Vibe | AI for Next Gen">
+    <meta property="og:description" content="Unlock your creative potential with Vibe AI. Smart, fast, and secure.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#000000">
+
+    <title>Vibe | AI for Next Gen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Canvas for Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Vibe Tech</a>
+
+            <div class="nav-links desktop-menu">
+                <a href="#products">Products</a>
+                <a href="#showcase">Vision</a>
+                <a href="#pricing">Invest</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#products" class="btn btn-primary nav-btn">Explore</a>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <a href="#products" class="mobile-link">Products</a>
+            <a href="#showcase" class="mobile-link">Vision</a>
+            <a href="#pricing" class="mobile-link">Invest</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#" class="btn btn-primary mobile-btn">Explore Ecosystem</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="assets/hero_bg_v2.png" alt="Cosmic Gradient Background" class="hero-img-3d">
+            <div class="vignette-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="badge glow-anim">The Future is Here</div>
+            <h1 class="hero-title glitch-text">Vibe<br>Technologies.</h1>
+            <p class="hero-text">Pioneering the next generation of neural interfaces. Led by visionary Sangyoga.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Our Products</a>
+                <a href="https://www.youtube.com/@sangyoga2434" target="_blank" class="btn btn-glass"><i
+                        class="fa-brands fa-youtube" style="margin-right: 8px;"></i> Watch Keynote</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>The Ecosystem.</h2>
+                <p>A unified suite of tools designed to amplify human potential.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="img-box">
+                        <img src="assets/feature_neural.png" alt="Vibe Omni">
+                    </div>
+                    <h3>Vibe Omni</h3>
+                    <p>Our flagship Large Language Model. Capable of reasoning, coding, and creative generation at
+                        superhuman speeds.</p>
+                </div>
+                <div class="feature-card tilt-card" style="transition-delay: 0.1s;">
+                    <div class="card-glow"></div>
+                    <div class="img-box">
+                        <img src="assets/feature_adaptive.png" alt="Vibe Flow">
+                    </div>
+                    <h3>Vibe Flow</h3>
+                    <p>An adaptive OS that learns your habits. It reorganizes your digital workspace dynamically to
+                        match your intent.</p>
+                </div>
+                <div class="feature-card tilt-card" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="img-box icon-style">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h3>Vibe Guardian</h3>
+                    <p>Biometric security suite. Your voice, retinal, and neural patterns form an unhackable key for
+                        your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="parallax-section">
+        <div class="parallax-bg-glow"></div>
+        <div class="parallax-container">
+            <div class="container">
+                <div class="reveal">
+                    <h2 class="text-gradient">Hardware Redefined</h2>
+                    <p class="section-text">The Vibe Nexus Phone. Pure glass, pure intelligence.</p>
+                </div>
+                <div class="phone-showcase">
+                    <img src="assets/phone_mockup.png" alt="Vibe Nexus" class="phone-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Join the Revolution.</h2>
+                <p>Select your tier in the Vibe ecosystem.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Explorer</h3>
+                    <div class="price">$0<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Vibe Omni (Basic)</li>
+                        <li><i class="fa-solid fa-check"></i> Mobile App Access</li>
+                        <li><i class="fa-solid fa-check"></i> Community Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Join Waitlist</a>
+                </div>
+                <div class="pricing-card featured reveal" style="transition-delay: 0.1s;">
+                    <div class="popular-tag">Best Value</div>
+                    <h3>Innovator</h3>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Vibe Omni (Pro)</li>
+                        <li><i class="fa-solid fa-check"></i> Vibe Flow OS</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Processing</li>
+                        <li><i class="fa-solid fa-check"></i> Early Hardware Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary full-width">Become an Innovator</a>
+                </div>
+                <div class="pricing-card reveal" style="transition-delay: 0.2s;">
+                    <h3>Visionary</h3>
+                    <div class="price">Custom</div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Enterprise API</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated Neural Node</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 CEO Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container max-w-lg reveal">
+            <div class="contact-box">
+                <h2>Contact Leadership</h2>
+                <p>Get in touch with CEO Sangyoga directly.</p>
+
+                <div style="margin: 30px 0; display: flex; justify-content: center; gap: 20px;">
+                    <a href="https://www.instagram.com/yogawoetomo?igsh=a3p3cTQ3NXF1eW0x" target="_blank"
+                        class="btn btn-glass" style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                            class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></a>
+                    <a href="https://www.youtube.com/@sangyoga2434" target="_blank" class="btn btn-glass"
+                        style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                            class="fa-brands fa-youtube" style="font-size: 1.5rem;"></i></a>
+                    <a href="https://wa.me/628991622997" target="_blank" class="btn btn-glass"
+                        style="border-radius: 50%; width: 50px; height: 50px; padding: 0;"><i
+                            class="fa-brands fa-whatsapp" style="font-size: 1.5rem;"></i></a>
+                </div>
+
+                <div style="margin-bottom: 30px; color: var(--text-secondary);">
+                    <p><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--accent-color);"></i>
+                        0899-1622-997</p>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message for Sangyoga</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    <div class="form-success-msg">Message sent to Sangyoga!</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Vibe Tech</a>
+                <p>&copy; 2026 Vibe Technologies.</p>
+                <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.6;">CEO: Sangyoga Wahyu Utomo</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Ecosystem</h4>
+                    <a href='#'>Vibe Omni</a>
+                    <a href='#'>Vibe Flow</a>
+                    <a href='#'>Vibe Guardian</a>
+                </div>
+                <div class="link-group">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/yogawoetomo?igsh=a3p3cTQ3NXF1eW0x" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/@sangyoga2434" target="_blank">YouTube</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
